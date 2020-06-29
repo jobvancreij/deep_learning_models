@@ -1,3 +1,10 @@
+""""
+Hyperopt pickles the function to optimize. Therefore, a few requirements are needed for the build model function
+ - Imports have to be inside the function
+ - Functions used inside the build_model functions cannot be created outside the function
+ - Imports can only be from outside this package. Therefore, the prepare_dataset_prediction function is moved to the LJT_helper_functions
+"""
+
 def build_model(space,settings,dataset_training,save_model = False,normalized=True):
     """
     This function builds models according to the parameters given
@@ -5,7 +12,7 @@ def build_model(space,settings,dataset_training,save_model = False,normalized=Tr
     :param settings: general settings
     :param dataset_training: the clean dataset before making sequences
     :param save_model: if true, return the model. Needed for training of the final model
-    :param normalized: should the data be normalized
+    :param normalized: should the data be normalized. 
     :return:
     """
     import os
