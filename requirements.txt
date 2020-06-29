@@ -1,0 +1,12 @@
+setuptools
+tensorflow-gpu==2.0
+keras==2.3.0
+matplotlib
+pandas
+numpy
+sklearn
+statsmodels
+hyperopt
+google-cloud-bigquery==1.22.0
+scikit-learn
+pandas
