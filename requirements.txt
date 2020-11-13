@@ -1,5 +1,5 @@
 setuptools
-tensorflow-gpu==2.0
+tensorflow-gpu==2.3.1
 keras==2.3.0
 matplotlib
 pandas
